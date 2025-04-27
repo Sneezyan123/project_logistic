@@ -1,0 +1,47 @@
+.login-page{
+    width:500px;
+    height:700px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color:white;
+}
+.register-page{
+    width:500px;
+    height:700px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color:white;
+}
+.inv{
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.under{
+    display: flex;
+    justify-content: space-between;
+}
+.q{
+    margin-top: 20px;
+    font-size: 40px;
+    text-decoration: none;
+}
+.maineq{
+    width:500px;
+}
+.under-text {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
