@@ -11,7 +11,8 @@ const apiService = {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
-        }
+        },
+        withCredentials: false
       });
       return response.data;
     } catch (error) {
@@ -26,7 +27,8 @@ const apiService = {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
-        }
+        },
+        withCredentials: false
       });
       return response.data;
     } catch (error) {
@@ -41,7 +43,8 @@ const apiService = {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
-        }
+        },
+        withCredentials: false
       });
       return response.data;
     } catch (error) {
@@ -55,7 +58,8 @@ const apiService = {
       const response = await axios.delete(`${API_BASE_URL}${endpoint}`, {
         headers: {
           'Authorization': `Bearer ${token}`
-        }
+        },
+        withCredentials: false
       });
       return response.data;
     } catch (error) {
