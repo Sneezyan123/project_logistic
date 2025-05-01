@@ -60,6 +60,8 @@ const RegisterForm = () => {
       }
 
       const { confirmPassword, ...registrationData } = userData;
+      console.log("here")
+      console.log(registrationData);
       const response = await register(registrationData);
       console.log(response);
       if (response.token) {
