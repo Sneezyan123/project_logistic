@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = "http://localhost:8000/user";  // Changed from 0.0.0.0 to localhost
+const API_URL = "https://miniproject-backend-1gy8.onrender.com/user";
 
 export const register = async (userData) => {
   try {
