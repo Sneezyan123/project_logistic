@@ -29,7 +29,7 @@ const LoginForm = () => {
     try {
       const userData = await login(credentials);
       authLogin(userData.user);
-      navigate('/profile');
+      navigate('/storage'); // Changed from /profile to /storage
     } catch (err) {
       setError('Невірний логін або пароль');
     }

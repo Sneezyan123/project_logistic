@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const API_URL = "https://miniproject-backend-1gy8.onrender.com/user";
+const APP_BASE_URL = "/project_logistic";
 
 export const register = async (userData) => {
   try {

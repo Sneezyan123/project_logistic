@@ -67,7 +67,7 @@ const RegisterForm = () => {
       if (response.token) {
         localStorage.setItem('token', response.token);
         authLogin(response.user);
-        navigate('/profile');
+        navigate('/storage');
       }
     } catch (error) {
       setErrors({ submit: error.message || 'Помилка реєстрації' });

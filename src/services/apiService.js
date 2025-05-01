@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const API_BASE_URL = "https://miniproject-backend-1gy8.onrender.com";
+const APP_BASE_URL = "/project_logistic";
 
 const apiService = {
   async get(endpoint, params = {}) {
@@ -72,7 +73,7 @@ const apiService = {
       switch (error.response.status) {
         case 401:
           localStorage.removeItem('token');
-          window.location.href = '/login';
+          window.location.href = `${APP_BASE_URL}/login`;
           break;
         case 403:
           console.error('Forbidden: You do not have permission');
